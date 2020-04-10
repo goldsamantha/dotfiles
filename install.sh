@@ -17,6 +17,10 @@ CASKS=(
     iterm2
 )
 
-echo "Installing cask apps...\n"
+echo "Installing cask apps..."
 brew cask install ${CASKS[@]}
 
+
+# TODO: make this an array with sources and destinations
+echo "Creating symlinks..."
+ln -sf $PWD/.gitconfig $HOME/.gitconfig

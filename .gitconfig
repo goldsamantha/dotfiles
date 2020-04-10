@@ -1,0 +1,12 @@
+[user]
+    name = Samantha Goldstein
+    email = samantha.goldstein31@gmail.com
+
+[alias]
+    c = commit
+    b = branch
+    s = status
+    co = checkout
+
+[core]
+    editor = vim
