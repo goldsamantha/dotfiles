@@ -16,6 +16,7 @@ CASKS=(
     dropbox
     iterm2
     visual-studio-code
+    spotify
 )
 
 echo "Installing cask apps..."
@@ -30,6 +31,7 @@ brew cask install ${CASKS[@]}
 bash -c  "$(curl -sLo- https://git.io/vQgMr)"
 
 # vim
+# install pathogen
 if [ ! -d ".vim/"]; then
     mkdir -p $PWD/.vim/autoload $PWD/.vim/bundle && \
     curl -LSso $PWD/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
