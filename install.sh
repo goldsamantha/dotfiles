@@ -9,6 +9,16 @@ fi
 # Update homebrew recipes
 brew update
 
+
+# My libraries
+LIBRARIES=(
+    jq
+)
+
+echo "Installing libraries..."
+brew install ${LIBRARIES[@]}
+
+
 # My apps
 CASKS=(
     notion
