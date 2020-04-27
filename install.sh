@@ -27,6 +27,8 @@ CASKS=(
     iterm2
     visual-studio-code
     spotify
+    adobe-creative-cloud
+    postman
 )
 
 echo "Installing cask apps..."
@@ -38,7 +40,7 @@ brew cask install ${CASKS[@]}
 # code --install-package <blahhh> 
 
 # colors
-bash -c  "$(curl -sLo- https://git.io/vQgMr)"
+#bash -c  "$(curl -sLo- https://git.io/vQgMr)"
 
 # vim
 # install pathogen
