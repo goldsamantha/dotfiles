@@ -13,10 +13,15 @@ brew update
 # My libraries
 LIBRARIES=(
     jq
+    fish
+    tree
 )
 
 echo "Installing libraries..."
 brew install ${LIBRARIES[@]}
+
+# change to fish shell
+chsh -s /usr/local/bin/fish
 
 
 # My apps
